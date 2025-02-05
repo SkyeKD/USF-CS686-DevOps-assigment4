@@ -16,8 +16,14 @@ cd USF-CS686-DevOps-assignment4
 ### **2️⃣ Start the Application with Docker Compose**
 1.	Make sure Docker is running on your system.
 2.	In the project directory, execute the following command to build and start the containers:
+## 🛑🛑🛑  Do not open Frontend page before the container is running successfylly!!!
+The Frontend page will try to get request before the backend is set up and the frontend will crash.
  ```bash
 docker compose up
+```
+or
+ ```bash
+docker compose up -d --build
 ```
 ### **3️⃣ Access the Application**
 After the containers are running, you can access the different components of the application:
